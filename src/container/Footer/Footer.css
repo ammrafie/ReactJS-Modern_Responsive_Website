@@ -1,0 +1,133 @@
+.app__footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--color-black);
+    padding-top: 0;
+}
+
+.p__brand-logo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    color: rgb(235, 235, 241);
+
+    background-image: url('https://cdn11.bigcommerce.com/s-hv21hhsv/images/stencil/2000x2000/products/14227/90761/159818orig__01180.1562762424.jpg?c=2');
+    background-size: 20%;
+    /* background-repeat: repeat; */
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app__footer-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.app__footer-links_contact,
+.app__footer-links_logo,
+.app__footer-links_work {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+.app__footer-links_logo img:first-child {
+    width: 210px;
+    margin-bottom: 0.75rem;
+}
+
+
+.app__footer-links_work p:nth-child(2n + 1) {
+    margin-bottom: 1rem;
+}
+
+.app__footer-links_icons {
+    margin-top: 0.5rem;
+}
+
+.app__footer-links_icons svg {
+    color: var(--color-white);
+    margin: 0.5rem;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.app__footer-links_icons svg:hover {
+    color: var(--color-golden);
+}
+
+.app__footer-headtext {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 41.6px;
+    margin-bottom: 1rem;
+}
+
+.footer__copyright {
+    margin-top: 3rem;
+}
+
+.copyright__footnote-top {
+    text-align: center;
+}
+
+.copyright__footnote-bottom {
+    margin-top: 12px;
+    text-align: center;
+    max-width: 550px;
+    font-style: italic;
+    color: rgb(239, 239, 239);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__footer-headtext {
+        font-size: 51px;
+        line-height: 61.6px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__footer-links {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .app__footer-links_contact,
+    .app__footer-links_logo,
+    .app__footer-links_work {
+        margin: 2rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__footer {
+        padding: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app__footer-links_logo img:first-child {
+        width: 80%;
+    }
+}
